@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color:rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    padding:0 1rem;
+}
+
+.navbar:hover{
+    background-color: black;
+    box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.7);
+}
+
+.navbar__menu ul{
+    position: absolute;
+    margin-left: 1rem;
+}
+.navbar__menu ul li{
+    float: left;
+    font-size: 2rem;
+    list-style: none;
+    padding:1.3rem 2.3rem;
+    line-height: 2.4rem;
+}
+
+.navbar__menu ul li:hover{
+    background-color: red;
+    box-shadow: 0rem 1rem 2rem rgba(255, 0, 0, 0.8);
+}
+.navbar__menu ul li a:link
+,.navbar__menu ul li a:visited{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.menu-icon{
+    display: none;
+    padding-left: 2rem;
+    font-size: 3rem;
+    float: left;
+}
+#toggle{
+    display: none;
+}
+.bg{
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.4)), url(img/iitkgp3.jpg);
+    background-size: 100% 100%;
+    height:100vh;
+    position: relative;
+    
+}
+
+.picture{
+    position: absolute;
+    top:30%;
+    left:10%;
+    width: 70%;
+    backface-visibility: hidden;    
+}
+
+.picture img{
+    float:left;
+    width:25%;
+    height:40%;
+    filter: blur(-1px);
+    animation-name: Appear1;
+    animation-duration: 1s;
+    animation-fill-mode: initial;
+    transition: ease-out 0.3s;
+}
+
+.heading{
+    display: block;
+    padding-left: 35%;
+    color: black;
+    font-weight: bold;
+    font-size: 5rem;
+    text-shadow: 0rem 2rem 3rem white;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+    font-family:  'Barlow Condensed', sans-serif;
+    animation-name: Appear;
+    animation-duration: 0.7s;
+    animation-fill-mode: initial;
+    transition: all 0.2s;
+}
+
+.sub-heading{
+    display: block;
+    padding-left: 35%;
+    color:red;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow:0rem 2rem 3rem white;
+    font-family: 'Barlow Condensed', sans-serif ;
+    text-shadow: 0rem 2rem 2.5rem white;
+    animation-name: Appear;
+    animation-delay: .8s;
+    animation-duration: .7s;
+    animation-fill-mode: backwards;
+    transition: all 0.2s;
+}
+
+.text{
+    display: block;
+    padding-left: 35%;
+    color:black;
+    font-family:  'Barlow Condensed', sans-serif ;
+    font-size: 3.5rem;
+    font-weight: bold;
+    animation-name: Appear;
+    animation-delay: 1.6s;
+    animation-duration: .7s;
+    animation-fill-mode: backwards;
+    transition: all 0.2s;
+}
+
+.picture img:hover{
+    transform: scale(1.1);
+    outline: red ridge 1rem ;
+    outline-offset: 1rem;    
+}
+
+
+@keyframes Appear{
+    0%{
+        opacity: 0;
+        transform:scale(0);
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+@keyframes Appear1{
+    0%{
+        transform: translateX(-20rem) scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+/*Academics Section */
+.academics{
+    background-image: linear-gradient(to bottom,white,yellow);
+    height: 100vh;
+    background-size: cover;
+    padding:3rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.card1{
+    position: absolute;
+    top:20%;
+    left:10%;
+    width:30rem;
+    height:45rem;
+    background-color: rgba(0, 0, 255, 0.7);
+    text-align: center;
+    box-shadow:0 2rem 4rem black;
+
+}
+.card1 img{
+    display: inline-block;
+    width:60%;
+}
+.card1:hover{
+    outline:red ridge 1rem;
+    outline-offset: 1rem;
+    box-shadow: none;
+    transform: translateY(0.5rem);
+    transition: all 0.3s;
+}
+.card2{
+    position: absolute;
+    top:20%;
+    right:10%;
+    width:30rem;
+    height:45rem;
+    background-color: rgba(128, 0, 75, 0.7);
+    text-align: center;
+    box-shadow:0 2rem 4rem black;
+    
+}
+
+.card2:hover{
+    outline:red ridge 1rem;
+    outline-offset: 1rem;
+    box-shadow: none;
+    transform: translateY(0.5rem);
+    transition: all 0.3s;
+}
+.card2 img{
+    display: inline-block;
+    width:60%;
+}
+
+.card3{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform:translateX(-50%);
+    width:30rem;
+    height:45rem;
+    background-color: rgba(0, 128, 0, 0.7);
+    text-align: center;
+    box-shadow:0 2rem 4rem black;
+    
+}
+
+.card3 img{
+    display: inline-block;
+    width:60%;
+}
+.card3:hover{
+    outline:red ridge 1rem;
+    outline-offset: 1rem;
+    box-shadow: none;
+    transform:translateX(-50%) translateY(0.5rem);
+    transition: all 0.3s;
+}
+
+.card-text{
+    font-family:'Barlow Condensed', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color:white;
+    padding:1rem;
+    display: block;
+    font-weight: bold;
+}
+
+.card-text-subheading{
+    font-family: 'Barlow Condensed', sans-serif ;
+    padding:1rem 2rem;
+    font-size: 2.2rem;
+    display: block;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+.achievements{
+    background-image: linear-gradient(to bottom, white, lightblue);
+    background-size: cover;
+    height: 100vh;
+    padding:4rem;
+    backface-visibility: hidden;
+}
+
+.box1{
+    margin: 4rem;
+    position: absolute;
+    right:0;
+    top:10%;
+    width:60%;
+    box-shadow:0rem 2rem 4rem black;
+    transform: skewX(4deg);
+    height: 22rem;
+    background-color: rgba(255, 0, 85, 0.65);
+    border-radius: 3rem;
+    animation-name: MoveInLeft;
+    animation-duration: 3s;
+    transition: ease-out 0.5s;
+}
+
+.box2{
+    margin: 4rem;
+    position: absolute;
+    left:0;
+    top:50%;
+    width:60%;
+    box-shadow:0rem 2rem 4rem black;
+    transform: skewX(-4deg);
+    height: 22rem;
+    background-color: rgba(251, 255, 0, 0.7);
+    border-radius: 3rem;
+    animation-name: MoveInRight;
+    animation-duration: 3s;
+    transition: ease-out 0.5s;
+
+}
+
+.image-section{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    padding-left:2.3rem;
+}
+.image-section img{
+    height: 100%;
+}
+
+.abs{
+    position: absolute;
+    left:33%;
+    font-weight: 500;
+    font-size:2.4rem;
+    top:50%;
+    transform: translateY(-50%);
+    padding-right:1rem;
+    float: left;
+}
+
+@keyframes MoveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    60%{
+        opacity: 80%;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes MoveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    60%{
+        opacity: 80%;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.interests{
+    background-image: url(img/bg.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 20rem;
+}
+
+.final{
+    position: absolute;
+    top:30%;
+}
+
+.contact{
+    height:100vh;
+    background-image: linear-gradient(to bottom,white, rgba(0, 0, 0, 0.705));   
+}
+
+.contact-box{
+    position: absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+    left:50%;
+    width:60%;
+    background-color: rgba(255, 0, 0, 0.9);
+    box-shadow:0rem 3rem 5rem rgba(0, 0, 0, 0.753);
+    height:35rem;
+    border-radius: 10px;
+    animation:MoveInTop 1.8s;
+    transition: ease-out 0.5s;
+}
+
+@keyframes MoveInTop{
+    0%{
+        opacity: 0;
+        transform:translate(-50%,-100%);
+    }
+    80%{
+        opacity:70%;
+        transform:translate(-50%,-40%);
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.contact-text{
+    font-size:3.9rem;
+    color:black;
+}
+.black{
+    color:black;
+}
+
+.contact_images a img{
+    float:right;
+    height:10rem;
+    width:10rem;
+    padding:1rem;
+}
